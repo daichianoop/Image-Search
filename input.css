@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background: linear-gradient(to top, #000000ff 6%, #00ccff4e 100%);
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+
+
+.searchResult {
+    position: relative;
+    background-color: black;
+    padding: 4px;
+    border: none;
+    border-radius: 2px;
+    justify-content: center;
+    width: 384px;
+    height: 260px;
+
+  }
+  
+  .searchResult:hover img {
+    transform: scale(1.05) translateY(-4px);
+
+  }
+  
+  .searchResult img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  .searchResult a {
+    padding: 2px;
+    display: block;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .searchResult:hover a {
+    color: rgb(53, 150, 230);
+  }

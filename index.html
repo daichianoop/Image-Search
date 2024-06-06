@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Images Online</title>
+    <link rel="stylesheet" href="input.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/3a884597e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .overflow-scroll::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="font-mono overflow-scroll text-sky-200">
+    <nav class="z-50 bg-zinc-950 bg-opacity-95 fixed top-0 right-0 left-0 border-b-2 border-zinc-900">
+      <ul class="flex items-center justify-between">
+        <div class="text-xl px-5 animate-pulse">Image Search App</div>
+        <div class="flex">
+          <a href="#home">
+            <li
+              class="text-sky-300 py-4 text-xl px-7 hover:bg-indigo-100 hover:bg-opacity-20 transition-all cursor-pointer delay-0"
+            >
+              Home
+            </li></a
+          >
+          <a href="#about">
+            <li
+              class="text-sky-300 py-4 text-xl px-7 hover:bg-indigo-100 hover:bg-opacity-20 transition-all cursor-pointer delay-0"
+            >
+              About
+            </li>
+          </a>
+          <a href="https://unsplash.com/documentation" target="_blank"><li
+            class="text-sky-300 py-4 text-xl px-7 hover:bg-indigo-100 hover:bg-opacity-20 transition-all cursor-pointer delay-0"
+          >
+            API
+          </li></a>
+          <a href="script.js"><li
+            class="text-sky-300 py-4 text-xl px-7 hover:bg-indigo-100 hover:bg-opacity-20 transition-all cursor-pointer delay-0"
+          >
+            Code
+          </li></a>
+         <li onclick="user1()"
+          class="text-sky-300 py-4 text-xl px-7 hover:bg-indigo-100 hover:bg-opacity-20 transition-all cursor-pointer delay-0 border-l-2 border-zinc-900"
+        >
+          User1
+        </li>
+        </div>
+      </ul>
+    </nav>
+    <section id="home" class="pt-24 px-5">
+      <div class="flex items-center justify-center">
+        <input
+          class="text-black w-1/2 px-4 py-2 text-lg mr-5"
+          type="text"
+          id="input"
+          placeholder="Enter the Description"
+        />
+        <button
+          class="bg-black px-6 pb-2 pt-3 text-lg items-center flex gap-x-3"
+          id="search"
+        >
+          <i
+            class="fa-solid fa-magnifying-glass fa-xs"
+            style="color: #c0e0de"
+          ></i>
+          Search
+        </button>
+      </div>
+    </section>
+
+    <div id="searchResults" class="px-5 mt-10 grid grid-cols-3 gap-y-7 gap-x-5">
+      <div class="h-96"></div>
+      <div class="h-96"></div>
+      <div class="h-96"></div>
+      <div class="h-4"></div>
+    </div>
+    <div class="items-center justify-center flex">
+      <button id="showMore" class="mt-10 mb-10 px-7 py-3 bg-blue-600">
+        Show More
+      </button>
+    </div>
+    <section
+      id="about"
+      class="bg-zinc-950 px-5 text-lg py-5 border-t-2 border-zinc-800"
+    >
+      <span class="text-sky-400 text-3xl font-semibold">About</span> <br />
+      This is a simple Image Search Application made by
+      <span class="text-2xl animate-pulse text-sky-600">User1</span> using
+      <span class="text-2xl animate-pulse text-sky-600">Unsplash API</span>,
+      Tailwind CSS and Vanilla Javascript. <br />
+      This project uses concept of various Methods such as<span
+        class="text-2xl animate-pulse text-sky-600"
+      >
+        appendChild(); </span
+      >Method,
+      <span class="text-2xl animate-pulse text-sky-600"> tryCatch(); </span
+      >Method, etc. using
+      <span class="text-2xl animate-pulse text-sky-600">map();</span> and
+      <span class="text-2xl animate-pulse text-sky-600">async</span> functions.
+      <br />
+      For more information on Unsplash API , visit
+      <a href="https://unsplash.com/" target="_blank"
+        ><span class="text-2xl animate-pulse text-lime-400"
+          >&rightarrow; Unsplash.com .</span
+        ></a
+      >
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
