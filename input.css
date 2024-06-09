@@ -17,9 +17,13 @@ body{
     border: none;
     border-radius: 2px;
     justify-content: center;
-    width: 384px;
+    width: 330px;
     height: 260px;
-
+  }
+  @media only screen and (min-width: 600px) {
+    .searchResult {
+      width: 394px;
+    }
   }
   
   .searchResult:hover img {
